@@ -11,11 +11,11 @@ import Cuadro6 from '../images/Inicio/Cuadro6.JPG';
 
 const data = [
     { place: "Puebla - Pue", description: "Bienvenido a CATSA Concretos.", image: Cuadro1 },
-    { place: "Puebla - Pue. Tiendas Innovasport, e Innvictus Puebla", description: "Estas en el sitio donde la calidad y la excelencia en el servicio, se encuentran con la Alta Tecnología.", image: Cuadro2 }
-    // { place: "Perote - Ver. Planta Fotovoltaica, Perote", description: "Te ofrecemos la mejor gama de productos en concreto premezclado, cumpliendo exactamente con los requerimientos que necesitas para tus proyectos.", image: Cuadro3 },
-    // { place: "Puebla - Pue. C. Comercial, Explanada Puebla", description: "Más de 20 años de experiencia, nuestra amplia cobertura y los más altos estándares de calidad son en los que los expertos confían.", image: Cuadro4 },
-    // { place: "Veracruz - Ver. Ampliación Puerto de Veracruz", description: "Contamos con el mejor equipo de profesionales, que te acompañan en todo momento.", image: Cuadro5 },
-    // { place: "Puebla - Pue. Plaza kentro", description: "Continúa hacia abajo y comprueba porque somos Alta Tecnología.", image: Cuadro6 }
+    { place: "Puebla - Pue. Tiendas Innovasport, e Innvictus Puebla", description: "Estas en el sitio donde la calidad y la excelencia en el servicio, se encuentran con la Alta Tecnología.", image: Cuadro2 },
+    { place: "Perote - Ver. Planta Fotovoltaica, Perote", description: "Te ofrecemos la mejor gama de productos en concreto premezclado, cumpliendo exactamente con los requerimientos que necesitas para tus proyectos.", image: Cuadro3 },
+    { place: "Puebla - Pue. C. Comercial, Explanada Puebla", description: "Más de 20 años de experiencia, nuestra amplia cobertura y los más altos estándares de calidad son en los que los expertos confían.", image: Cuadro4 },
+    { place: "Veracruz - Ver. Ampliación Puerto de Veracruz", description: "Contamos con el mejor equipo de profesionales, que te acompañan en todo momento.", image: Cuadro5 },
+    { place: "Puebla - Pue. Plaza kentro", description: "Continúa hacia abajo y comprueba porque somos Alta Tecnología.", image: Cuadro6 }
 ];
 
 const Animacion = () => {
@@ -54,7 +54,7 @@ const Animacion = () => {
             });
         }
 
-        let order = [0, 1];
+        let order = [0, 1, 2, 3, 4, 5];
         let detailsEven = true;
         let clicks = 0;
 
@@ -68,7 +68,6 @@ const Animacion = () => {
 
         function updateLayout() {
             const { innerHeight: height, innerWidth: width } = window;
-
             if (width <= 480) {
                 cardWidth = 150;
                 cardHeight = 200;
