@@ -1,0 +1,106 @@
+/* Estilos generales para los paneles */
+.container {
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos hijos estén en fila */
+    width: 100vw; /* Puedes ajustar esto según tus necesidades */
+    margin: auto;
+    overflow-x: auto; /* Permite desplazamiento horizontal si los elementos no caben */
+}
+.panel {
+    flex: 0.5;
+    color: #fff;
+    height: 85vh;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: flex 0.2s ease-in;
+}
+
+.panel:before {
+    content: "";
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(19, 48, 127, 0.8);
+    background: linear-gradient(0deg, rgba(19, 48, 127, 1) 0%, rgba(19, 48, 127, 0) 100%);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+}
+
+.panel h3 {
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: translate(-50%, -50%) scale(-1);
+    transition: opacity 0.2s ease-in;
+}
+
+.panel .informacion {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 50%;
+    text-align: center;
+    pointer-events: none;
+    transform: translateX(-50%);
+    transition: opacity 0.2s ease-in;
+}
+
+.panel .informacion span {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.panel .informacion p {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.panel.active {
+    flex: 2;
+}
+
+.panel.active h3 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.panel.active .informacion {
+    opacity: 1;
+}
+
+.normal-shadow {
+    box-shadow: 0px 5px 20px 1px #000;
+}
+
+/* Específicos para cada panel según su clase única */
+.cemento-concreto {
+    background-image: url('../images/Panel/CopiaDeCalidad.jpeg');
+}
+
+.construsistemas {
+    background-image: url('../images/Panel/CopiaDeConfiabilidad.jpeg');
+}
+
+.soluciones-agua {
+    background-image: url('../images/Panel/CopiaDeSevricio.png');
+}
+
+.herramientas {
+    background-image: url('../images/Panel/CopiaDeTecnologíaDefinituvo.jpg');
+}

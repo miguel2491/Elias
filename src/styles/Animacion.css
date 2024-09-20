@@ -1,0 +1,353 @@
+
+@font-face {
+    font-family: 'UnisonProBoldRound';
+    src: url('../fonts/TypeJuice-UnisonProBoldRound.otf') format('opentype'), url('../fonts/TypeJuice-UnisonProBoldRound.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir-Book';
+    src: url('../fonts/Avenir-Book.ttf') format('opentype'), url('../fonts/Avenir-Book.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    background-color: #1f234a;
+    color: #fff;
+    position: relative;
+    overflow-x: hidden;
+    font-family: "UnisonProBoldRound", sans-serif;
+}
+
+.card {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.6);
+}
+
+.card-content {
+    position: absolute;
+    left: -19px;
+    top: 0;
+    color: #fff;
+    width: 200px;
+    padding-left: 30px;
+}
+
+.content-place {
+    margin-top: 6%;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.content-title-1, .content-title-2 {
+    font-weight: 600;
+    font-size: 11px;
+    font-family: "UnisonProBoldRound", sans-serif;
+}
+
+.content-start {
+    width: 30px;
+    height: 5px;
+    border-radius: 99px;
+    background-color: #fff;
+}
+
+.details {
+    z-index: 22;
+    position: absolute;
+    top: 180px;
+    left: 60px;
+}
+
+.details .place-box {
+    height: 46px;
+    overflow: hidden;
+}
+
+.details .place-box .text {
+    padding-top: 16px;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.details .place-box .text:before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 4px;
+    border-radius: 99px;
+    background-color: white;
+}
+
+.details .title-1, .details .title-2 {
+    font-weight: 600;
+    font-size: 72px;
+    font-family: "UnisonProBoldRound", sans-serif;
+}
+
+.details .title-box-1, .details .title-box-2 {
+    margin-top: 2px;
+    height: 100px;
+    overflow: hidden;
+    text-shadow: black 0.2em 0.2em 0.4em;
+}
+
+.details > .desc {
+    margin-top: 16px;
+    width: 500px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.details > .cta {
+    width: 500px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.details > .cta > .bookmark {
+    border: none;
+    background-color: #ecad29;
+    width: 36px;
+    height: 36px;
+    border-radius: 99px;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.details > .cta > .bookmark svg {
+    width: 20px;
+    height: 20px;
+}
+
+.details > .cta > .discover {
+    border: 1px solid #fff;
+    background-color: transparent;
+    height: 36px;
+    border-radius: 99px;
+    color: #fff;
+    padding: 4px 24px;
+    font-size: 12px;
+    margin-left: 16px;
+    text-transform: uppercase;
+}
+
+.indicator {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 5px;
+    z-index: 60;
+    background-color: #e62a43;
+}
+
+.pagination {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: inline-flex;
+}
+
+.progress-sub-container {
+    margin-left: 550px;
+    z-index: 60;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.progress-sub-container .progress-sub-background {
+    width: 500px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.progress-sub-container .progress-sub-background .progress-sub-foreground {
+    height: 3px;
+    background-color: #e62a43;
+}
+
+@media (max-width: 420px) {
+    #target-word {
+        font-size: 25pt !important;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (min-width: 420px) {
+    #target-word {
+        font-size: 80pt !important;
+        text-align: center;
+    }
+    .nolist{
+        margin-left:15% !important;
+    }
+    .carapollo .wrapper {
+        margin:45px auto 0 !important;
+    }
+    .proyectos main{
+        height:80vw;
+    }
+    .tabs li
+    {
+        font-size:15px !important;
+    }
+    .subject .reveal-up p{
+        font-size:30pt !important;
+    }
+    .details-even{
+        font-size:25pt;
+    }
+
+}
+@media (max-width: 1024px) {
+    #target-word {
+        font-size: 25pt !important;
+        text-align: center;
+    }
+    .card {
+        width: 90%; /* Más ancho para mejor utilización del espacio */
+    }
+
+    .tabs li {
+        font-size: 10px !important; /* Ajuste de tamaño para mejor visualización */
+    }
+}
+
+@media (max-width: 768px) {
+
+    #target-word {
+        font-size: 25pt !important;
+        text-align: center;
+    }
+
+    .nolist {
+        margin-left: 10%; /* Reducción del margen */
+    }
+
+    .tabs li {
+        font-size: 7px !important; /* Tamaño adecuado para pestañas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    #target-word {
+        font-size: 18pt !important; /* Tamaño de fuente reducido para adaptarse a pantallas muy pequeñas */
+        text-align: center;
+    }
+
+    .card {
+        width: 100%; /* Aprovecha todo el ancho disponible */
+    }
+
+    .nolist {
+        margin-left: 5%; /* Menos margen debido a la limitación de espacio */
+    }
+
+    .tabs li {
+        font-size: 8px; /* Tamaño mínimo legible */
+    }
+
+    .subject .reveal-up p {
+        font-size: 20pt; /* Ajuste para mantener la legibilidad */
+    }
+
+    .details-even {
+        font-size: 18pt; /* Ajuste de tamaño de fuente */
+    }
+}
+
+@media (max-width: 1024px) {
+    .card-content {
+        width: 180px; /* Ajuste de ancho */
+    }
+
+    .details {
+        top: 160px;
+        left: 30px;
+    }
+
+    .details .title-1, .details .title-2 {
+        font-size: 48px; /* Reducción del tamaño de la fuente para títulos grandes */
+    }
+
+    .details > .desc, .details > .cta {
+        width: 400px; /* Ajuste del ancho del contenido */
+    }
+
+    .progress-sub-container {
+        margin-left: 20px;
+        width: 90%; /* Ajuste para contenedores de progreso */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-content {
+        left: 0; /* Centrar contenido en pantallas más pequeñas */
+        width: 160px;
+    }
+
+    .content-place {
+        font-size: 10px; /* Reducción de tamaño de fuente para adaptarse a pantallas más pequeñas */
+    }
+
+    .details {
+        top: 150px;
+        left: 20px;
+    }
+
+    .details .title-1, .details .title-2 {
+        font-size: 32px; /* Más reducción de tamaño de fuente para títulos */
+    }
+
+    .details > .desc, .details > .cta {
+        width: 90%; /* Ajuste de ancho para descripciones y llamadas a la acción */
+    }
+
+    .progress-sub-container {
+        margin-left: 10px;
+        width: 85%; /* Ajuste para el contenedor de progreso */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-content {
+        padding-left: 20px; /* Ajuste del padding para mejor visualización */
+    }
+
+    .details .title-1, .details .title-2 {
+        font-size: 24px; /* Ajuste adicional para tamaños de fuente de títulos */
+    }
+
+    .details > .cta > .discover {
+        font-size: 10px; /* Reducción de tamaño de fuente en botones */
+    }
+}
+
+@media (max-width: 576px) {
+    .my-5 {
+      margin-top: 2rem !important;
+      margin-bottom: 2rem !important;
+    }
+  
+    .text-center {
+      text-align: center !important;
+    }
+  }
+  
