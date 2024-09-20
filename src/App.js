@@ -20,8 +20,8 @@ function App() {
       minBreakpoint="xxs">
       <Bar />
       <Row>
-      <Ainicio id="inicio"/>
-      </Row>
+        <Ainicio id="inicio"/>
+      </Row> 
       <Row style={{ paddingTop: '50%', margin:'8%'}} id="sobre-nosotros">
         <div className='text-center' style={{ fontSize:'1.5rem'}}>
           En <span style={{ color: '#e62a43' }}>CATSA</span>, además de encontrar el mejor concreto; también encuentras el camino hacia tus sueños. La calidad de nuestros productos, construyen y son fuente de <span style={{ color: '#e62a43' }}>Cimientos Fuertes, Soluciones Reales y Futuros Brillantes.</span>
@@ -30,11 +30,12 @@ function App() {
       <Row style={{margin:'5%'}}>  
         <Panel />
       </Row>
+      
       <Row style={{paddingTop:'5%'}}>
       <Tabs id="productos"/>
       </Row>
       <Row style={{paddingTop:'20%'}}>
-      <Carru />
+        <Carru />
       </Row>
       <Container>
         <Row style={{ paddingTop: '10%'}} id="clientes">
@@ -44,14 +45,14 @@ function App() {
         </Row>        
       </Container>
       <Row>
-      <Mapa />
+        <Mapa />
       </Row>
       <Row>
       <Contacto />
-      </Row>
+      </Row> 
       <Letras/>
       <Pie id="contacto"/>
-    </ThemeProvider>
+      </ThemeProvider>
   );
 }
 
