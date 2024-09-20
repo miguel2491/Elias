@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Disclosure } from '@headlessui/react';
 import { ChevronUpIcon } from '@heroicons/react/20/solid';
+import Modal from '../Work/Modal'
 
 interface faqdata {
     heading: string;
@@ -31,15 +32,18 @@ const Faq: React.FC = () => {
     const [nombreTxt, setNombre] = useState('');
     const [correoTxt, setCorreo] = useState('');
     const [asuntoTxt, setAsunto] = useState('');
+    const [isOpen, setIsOpen] = useState(false);
+    const abrirModal = () => setIsOpen(true);
+    const cerrarModal = () => setIsOpen(false);
 
     const manejarEnvio = (e: React.FormEvent) => {
         e.preventDefault();
         // Manejar el envío de los datos
         sendCorreo();
+        
     };
     async function sendCorreo()
     {
-        console.log({ nombreTxt, correoTxt, asuntoTxt });
         const fData = 
         {
             nombre: nombreTxt,
@@ -72,11 +76,17 @@ const Faq: React.FC = () => {
             });
             const data = await response.json();
             console.log(data);
+            abrirModal();
+            setNombre('');
+            setAsunto('');
+            setCorreo('');
+
         } catch (error) {
             console.error('Error:', error);
         }
     }
     return (
+        
         <div className="my-20 px-6" id="faq-section">
             {/* <h3 className="text-center text-3xl lg:text-5xl font-bold text-offwhite mb-3">Frequently Asked And Question</h3>
             <p className="text-center lg:text-lg font-normal text-bluish">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <br /> been the industry standard dummy text ever since the 1500s,</p> */}
@@ -136,8 +146,15 @@ const Faq: React.FC = () => {
                     </div>
                 </div>
             </div>
+            </div>
+            <Modal isOpen={isOpen} onClose={cerrarModal}>
+                <h2 className="text-lg font-bold">ÉXITO</h2>
+                <p>Se envio tu correo, en breve te contactaremos</p>
+                <button onClick={cerrarModal} className="mt-4 bg-blue-500 text-black py-2 px-4 rounded">
+                    Aceptar
+                </button>
+            </Modal>
         </div>
-    </div>
     )
 }
 

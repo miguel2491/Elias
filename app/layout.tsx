@@ -23,6 +23,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <script src="./Mapa/mapdata.js"></script>
+        <script src="./Mapa/countrymap.js"></script>
       </body>
     </html>
   )

@@ -6,7 +6,7 @@ import Features from './components/Features/index';
 import Simple from './components/Simple/index';
 import Trade from './components/Trade/index';
 import Faq from './components/Faq/index';
-
+import Mapa from './components/Mapa/index';
 
 export default function Home() {
   return (
@@ -18,7 +18,9 @@ export default function Home() {
       <Features />
       <Simple />
       <Trade />
+      <Mapa />
       <Faq />
+      
     </main>
   )
 }
