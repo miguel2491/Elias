@@ -18,19 +18,19 @@ import {
 export const navLinks = [
   {
     id: "home",
-    title: "Home",
+    title: "Inicio",
   },
   {
     id: "features",
-    title: "Features",
+    title: "Nosotros",
   },
   {
     id: "product",
-    title: "Product",
+    title: "Productos y Servicios",
   },
   {
     id: "clients",
-    title: "Clients",
+    title: "Contactanos",
   },
 ];
 
@@ -105,7 +105,7 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Menú",
     links: [
       {
         name: "Content",

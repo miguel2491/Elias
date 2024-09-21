@@ -23,7 +23,8 @@ const App = () => {
       </div>
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Hero/>      
+          <Hero/> 
+          <p style={{color:"white"}}>https://fullpage.caferati.me/page-two</p>     
         </div>
       </div>
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
