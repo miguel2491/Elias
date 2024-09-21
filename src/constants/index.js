@@ -168,7 +168,16 @@ export const footerLinks = [
     ],
   },
 ];
-
+export const letrasTexto = [
+  {
+    id:1,
+    texto:"Solidez"
+  },
+  {
+    id:2,
+    texto:"Fortaleza"
+  }
+];
 export const socialMedia = [
   {
     id: "social-media-1",
@@ -180,11 +189,11 @@ export const socialMedia = [
     icon: facebook,
     link: "https://www.facebook.com/",
   },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
+  // {
+  //   id: "social-media-3",
+  //   icon: twitter,
+  //   link: "https://www.twitter.com/",
+  // },
   {
     id: "social-media-4",
     icon: linkedin,

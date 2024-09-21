@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { close, logo, menu } from '../assets'
+import { close, logo, menu, letras } from '../assets'
 import { navLinks } from '../constants'
+import '../constants/Barra.css';
 
 const Navbar = () => {
 
@@ -8,7 +9,8 @@ const Navbar = () => {
 
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <img src={logo} alt='hoobank' className='w-[124px] h-[102px]'/>
+      <img src={logo} alt='hoobank' style={{width:'80px'}} className='navbar-logo logo1 rotating-logo'/>
+      <img src={letras} alt='hoobank' style={{width:'180px'}} className='navbar-logo logo1'/>
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, i) => (
           <li 

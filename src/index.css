@@ -138,3 +138,8 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(300px);
 }
+
+.rotating-logo {
+  animation: rotate 5s linear infinite;
+}
+
