@@ -3,16 +3,22 @@ import styles from '../style'
 import { logo } from '../assets'
 import { footerLinks, socialMedia, letrasTexto } from '../constants'
 
+
 const Footer = () => {
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
+      
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
         <div className='flex-1 flex flex-col justify-start mr-10'>
+        
           <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>
+          
+          <div id="fullpage">
             {
-              letrasTexto.map((letters, index) =>(
-                <b>{letters.texto}</b>
+              letrasTexto.map((letters, index) =>(      
+                  <div className="section">{letters.texto}</div>
               ))}         
+          </div>
           </p>
         </div>
         {/* <div className='flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10'>

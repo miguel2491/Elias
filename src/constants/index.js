@@ -176,6 +176,14 @@ export const letrasTexto = [
   {
     id:2,
     texto:"Fortaleza"
+  },
+  {
+    id:3,
+    texto:"Durabilidad"
+  },
+  {
+    id:3,
+    texto:"INNOVACIóN"
   }
 ];
 export const socialMedia = [
